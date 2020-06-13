@@ -133,7 +133,7 @@ private:
     void f_round_(Node* node){
         if(node != nullptr){
             f_round_(node->left);
-            f_round_str+=std::to_string(node->data);
+            f_round_str+=std::to_string(node->data) + ' ';
             f_round_(node->right);
         }
     }
