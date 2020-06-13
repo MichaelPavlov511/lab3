@@ -16,6 +16,7 @@ public:
     }
 
     T get(int index) const{
+        if (index < 0 || index > this->Get_Length()) throw std::out_of_range("Index out of range!");
         return this->list->elements()[index];
     }
 
