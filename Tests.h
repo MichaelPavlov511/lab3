@@ -10,7 +10,7 @@ void testBase(){
     int arr[5] = {12, 7, 3, 86, 45};
     BinaryTree<int> bt(arr, 5);
 
-        assert(bt.f_round() == "37124586");
+        assert(bt.f_round() == "3 7 12 45 86 ");
         assert(bt.contains(3));
         assert(bt.get_height() == 3);
 
