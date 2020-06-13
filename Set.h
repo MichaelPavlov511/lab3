@@ -83,6 +83,29 @@ public:
         for (int i = 0; i < set.Get_Length(); ++i) if (!this->HasElement(set.get(i))) return false;
         return true;
     }
+    
+        std::string str(){
+        return list->f_round();
+    }
+
+    friend std::ostream& operator<<(std::ostream& stream, const Set<T>& set){
+        for(auto i : set.list->elements()) stream << i << ' ';
+        return stream;
+    }
+
+    friend std::istream&operator>>(std::istream& stream, Set<T>& set){
+
+        //      example : elem1 , elem2 , elem3 , elem4 .
+
+        T item;
+        char t = ' ';
+        while(t != '.'){
+            stream >> item;
+            set.Add(item);
+            stream >> t;
+        }
+        return stream;
+    }
 
     ~Set<T>() = default;
 
