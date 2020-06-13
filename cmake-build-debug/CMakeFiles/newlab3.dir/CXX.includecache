@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/vsyakoe/newlab3/BinaryTree.h
+string
+-
+vector
+-
+
+D:/vsyakoe/newlab3/Set.h
+BinaryTree.h
+D:/vsyakoe/newlab3/BinaryTree.h
+
+D:/vsyakoe/newlab3/Tests.h
+cassert
+-
+Set.h
+D:/vsyakoe/newlab3/Set.h
+
+D:/vsyakoe/newlab3/main.cpp
+iostream
+-
+Tests.h
+D:/vsyakoe/newlab3/Tests.h
+
